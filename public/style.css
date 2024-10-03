@@ -1,0 +1,41 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    /* background-color: #111; */
+}
+
+.main-content > a:link, .main-content > a:hover, .main-content > a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.main-content {
+    padding: 50px;
+    border-radius: 50px;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    background: linear-gradient(270deg, #ff0000, #ff9900, #00ff00, #0000ff, #ff00ff, #ff0000);
+    background-size: 1200% 1200%;
+    animation: color-shift 15s ease infinite;
+}
+
+@keyframes color-shift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
